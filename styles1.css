@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 section{
@@ -12,7 +12,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: cornflowerblue;
+    background-color: palevioletred;
     transition: 0.5s;
     
 }
@@ -21,7 +21,7 @@ header{
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,10 +49,63 @@ overflow: hidden;
     float: right;
 }
 
-h1 {
+header h1 a{
     position: relative;
     font-size: 30px;
     color: floralwhite;
     font-weight: 600;
     text-decoration: none;
+}
+
+.content{
+    position: right;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 660px;
+}
+
+.content .textBox h2{
+    color: floralwhite;
+    font-size: 2cm;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span{
+    font-size: 1cm;
+}
+
+.content .textBox p{
+    color: floralwhite;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: floralwhite;
+    color: black;
+    border-radius: 80px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px ;
+    margin: 0 auto;
+    padding-bottom: 20px 10px;
 }
