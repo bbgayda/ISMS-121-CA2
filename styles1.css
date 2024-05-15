@@ -55,7 +55,7 @@ overflow: hidden;
 }
 
 .navbar li a:hover, focus{
-    color: green;
+    color: rgba(255, 0, 0, 0.637);
 }
    
 .navbar li a::after{
@@ -63,7 +63,7 @@ overflow: hidden;
     display: block;
     height: 4px;
     width: 0;
-    background: #c4c4c4;
+    background: rgba(255, 0, 0, 0.637);
     transition: all .5s;
 }
 
@@ -81,6 +81,10 @@ header h1 a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: initial;
     color: blue;
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
     font-weight: 600;
     text-decoration: solid;
 }
@@ -124,7 +128,14 @@ header img{
     font-size: 20px;
 }
 
-.content-left .textBox a{
+.content-left .textBox p span{
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.content-left .textBox a {
     display: inline-block;
     margin: auto;
     margin-top: 30px;
@@ -146,7 +157,7 @@ header img{
     display: flex;
     float: left;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     max-width: 500px ;
@@ -158,5 +169,7 @@ header img{
         margin-right: -50%;
         transform: translate(-50%, -50%) 
     }
+
+
 
 
